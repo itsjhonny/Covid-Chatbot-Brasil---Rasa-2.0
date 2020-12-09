@@ -1,7 +1,7 @@
 # Brazil Chatbot-Rasa 2.0+
 COVID-19 Chatbot utiliza perguntas e resposta do portal da Fiocruz (https://mooc.campusvirtual.fiocruz.br/rea/coronavirus/faq.html)
 
-``` MIT License | Open Source :D ```
+``` MIT License | Rasa | MongoDB | Python | Open Source 💙  ```
 
 1. Rodar este comando para iniciar:
 
