@@ -1,5 +1,5 @@
 # Brazil Chatbot-Rasa 2.0+
-COVID-19 Chatbot (https://mooc.campusvirtual.fiocruz.br/rea/coronavirus/faq.html)
+COVID-19 Chatbot utiliza perguntas e resposta do portal da Fiocruz (https://mooc.campusvirtual.fiocruz.br/rea/coronavirus/faq.html)
 2. Rodar este comando para iniciar:
 
 ```docker-compose up --build```
