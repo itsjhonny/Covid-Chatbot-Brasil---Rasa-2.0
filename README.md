@@ -1,11 +1,13 @@
 # Brazil Chatbot-Rasa 2.0+
 COVID-19 Chatbot utiliza perguntas e resposta do portal da Fiocruz (https://mooc.campusvirtual.fiocruz.br/rea/coronavirus/faq.html)
 
-2. Rodar este comando para iniciar:
+``` MIT License | Open Source :D ```
+
+1. Rodar este comando para iniciar:
 
 ```docker-compose up --build```
 
-3. Pagina web do bot:
+2. Pagina web do bot:
 
 ```http://localhost:3000```
 
@@ -77,5 +79,3 @@ dentro da pasta backend
 - [ ] Implementar Telegram
 - [ ] Implementar action_news_covid (Ultimas noticias de covid)
 - [ ] Open a pull request
-
-
