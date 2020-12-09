@@ -71,6 +71,8 @@ dentro da pasta backend
 (env_rasa_chatbot)terminal $: rasa run actions & rasa x -m models --enable-api --log-file rasa.log  --cors "*"
 ```
 ### ToDo:
-- Implementar Telegram
-- Implementar action_news_covid (Ultimas noticias de covid)
+- [ ] Implementar Telegram
+- [ ] Implementar action_news_covid (Ultimas noticias de covid)
+- [ ] Open a pull request
+
 
