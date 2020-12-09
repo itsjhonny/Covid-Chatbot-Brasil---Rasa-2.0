@@ -7,10 +7,10 @@ COVID-19 Chatbot utiliza perguntas e resposta do portal da Fiocruz (https://mooc
 
 3. Pagina web do bot:
 
-```http://localhost:3000
+```http://localhost:3000```
 
 Obs: esperar a mensagem 'connected to socketIO endpoint.'
-```
+
 
 
 **NOTE:** 
