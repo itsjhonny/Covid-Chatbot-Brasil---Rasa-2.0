@@ -11,7 +11,7 @@ COVID-19 Chatbot utiliza perguntas e resposta do portal da Fiocruz (https://mooc
 
 ```http://localhost:3000```
 
-Obs: esperar a mensagem no terminal 'connected to socketIO endpoint.' do rasa_server.
+Obs: esperar a mensagem no terminal *connected to socketIO endpoint.* do rasa_server.
 
 
 
