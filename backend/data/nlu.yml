@@ -1,0 +1,770 @@
+version: "2.0"
+nlu:
+- synonym: covid 
+  examples: |
+    - corona
+    - covid 19
+    - covid
+    - corona Vírus
+    - corona Virus
+    - Corona Virus
+    - Corona
+    - Sars
+    - Sars-CoV-2
+    - COVID-19
+
+
+
+
+- intent: saudacao
+  examples: |
+    - ola
+    - bom dia
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - boa tarde
+    - tudo bem
+    - alguem ai
+    - me ajuda aqui
+    - voce esta ai
+    - oi
+    - oie
+    - e ai
+    - hello
+    - salut
+    - oi, tudo bem
+    - boa noite
+    - oi, como vai
+    - ola, como vai
+    - oi td bem
+    - oi tudo bem
+    - oi bot, tudo bem?
+    - oi wal
+    - oi, vc pode me ajudar
+    - oi assistente virtual
+    - oi robô
+    - oi, quero tirar umas duvidas
+- intent: adeus
+  examples: |
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - tchau
+    - ate mais
+    - ate a proxima
+    - ate breve
+    - ate
+    - xau
+    - foi um prazer
+    - adeus
+- intent: menu
+  examples: |
+    - menu
+    - opcoes
+    - O que voce sabe?
+    - o que voce conhece
+    - menu, por favor
+    - quero o menu, plz
+    - quais as opcoes
+    - mais opcoes
+    - ajuda
+    - preciso de ajuda
+    - me dá o menu de ajuda
+    - quero a ajuda
+- intent: global_cases_covid
+  examples: |
+    - estatisticas
+    - tempo real
+    - quero saber quantos obitos 
+    - quero saber o numero de infectatos atualizado
+    - numero atualizado
+    - numero de infectados
+
+
+
+###### Feedback também chamado pelo utter_adeus ######
+- intent: avaliacao_feliz
+  examples: |
+    - /avaliacao_feliz
+    - voce mandou bem!
+    - voce me ajudou
+    - voce tirou minha duvida
+    - duvida esclarecida
+    - voce me ajudou
+- intent: avaliacao_triste
+  examples: |
+    - /avaliacao_triste
+    - nao gostei
+    - voce nao me ajudou
+    - sua resposta esta errada
+
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+###### Fiocruz portal  questions zone ######
+- intent: O_que_e_covid-19
+  examples: |
+    - o que é covid?
+    - o que é coronavirus?
+    - me fala sobre o corona
+    - quero saber o que é covid
+    - o que é corona
+    - o que é sars
+    - me fala sobre o coronga
+    - quero saber sobre corona vairus
+
+- intent: O_que_significa_a_palavra_coronavirus
+  examples: |
+    - O que significa a palavra coronavirus
+    - significado da palavra corona
+    - o que a é essa palavra corona
+    - significado da palavra
+
+- intent: O_que_significa_Sars-CoV-2
+  examples: |
+    - Sars-CoV-2
+    - significado de Sars-CoV-2
+    - sars Cov
+    - o que significa a palavra sars covid
+
+- intent: Quando_devo_usar_SARS-CoV-2,_COVID-19_e_coronavirus
+  examples: |
+    - quando devo usar sars-cov ou corona virus
+    - quando devo perguntar usando coronavirus ou sars
+    - quando uso sars cov ou covid
+    - quando usar coronavirus
+    - coronavirus ou sars
+
+
+- intent: Como_surgiu_o_novo_Coronavirus
+  examples: |
+    - como surgiu o virus?
+    - como tudo isso comecou?
+    - como apareceu o coronavirus?
+    - como surgiu?
+    - como chegou?
+    - como nasceu esse virus?
+
+
+- intent: O_novo_coronavirus_e_o_mesmo_que_os_virus_Sars_ou_Mers
+  examples: |
+    - esse virus é igual sars e mers?
+    - eles sao parecidos?
+
+
+- intent: Qual_e_a_diferenca_entre_transmissao_local_e_comunitaria_sustentada
+  examples: |
+    - qual a diferenca de transmissao local e comunitaria
+    - transmissao local e comunitaria
+    - tipo de transmissao local e comunitaria sustentada
+    - comunitaria sustentada
+
+
+- intent: Quais_os_primeiros_sintomas_da_COVID-19
+  examples: |
+    - quais os sitomas?
+    - como saber se estou com covid
+    - primeiros sinais de covid
+    - primeiros sintomas de corona
+    - sintomas de covid
+    - febre é um sintoma de covid?
+
+
+- intent: Como_diferenciar_gripe_comum_do_coronavirus
+  examples: |
+    - como diferenciar
+    - qual é a diferenca de gripe para covid
+    - diferenca de gripe para corona
+    - diferenca de gripe para o virus
+    - gripe
+
+
+- intent: Quais_sao_os_criterios_para_aplicacao_do_teste_Pessoas_com_sintomas_leves_nao_estao_sendo_testadas
+  examples: |
+    - pessoas com sintomas leves estao sendo testadas?
+    - testes em pessoas com poucos sintomas
+    - teste de covid com pessoas sem sintomas
+    - criterios para aplicacao dos testes
+    - criterios para a testagem de pessoas
+
+
+- intent: Como_posso_fazer_o_teste_de_diagnostico_na_Fiocruz
+  examples: |
+    - como posso fazer o teste na Fiocruz
+    - quero ser testado pela Fiocruz
+    - como posso ser diagnosticado na Fiocruz
+    - diagnostico contra covid na Fiocruz
+    - exame na instuicao oswaldo cruz
+
+
+- intent: A_COVID-19_pode_apresentar_outros_sintomas
+  examples: |
+    - quais os sintomas da covid
+    - quais os outros sintomas da doenca
+    - covid 19 e os ssintomas que ela apresenta
+    - outros sintomas do virus
+    - quero saber quais sao os sintomas do covid
+
+
+- intent: Pessoas_com_sintomas_leves_podem_transmitir_a_COVID-19
+  examples: |
+    - pessoas com sintomas leves
+    - transmissao da covid pessoas com sintomas leves
+    - pessoas com sintomas leves podem transmitir a doenca
+    - assistomatico transmissao da doenca
+    - covid e transmissao com sintomas leves
+
+
+- intent: A_pessoa_pode_transmitir_o_coronavirus_mesmo_sem_apresentar_sintoma
+  examples: |
+    - transmitir covid sem apresentar sintomas 
+    - eu posso tranmitir covid sem sintoma?
+    - uma pessoa saudavel pode transmitir covid?
+    - pessoas sem sintomas pode transmitir covid?
+    - pessoas sem febre podde passar covid para outra pessoa?
+
+
+- intent: Quando_a_pessoa_deve_procurar_atendimento_de_saude
+  examples: |
+    - quando devo procurar atendimento medicos?
+    - quando tenho que buscar ajuda medica?
+    - quando preciso ir ao hospital?
+    - quando devo ir ao posto de saude?
+
+
+- intent: Devo_me_preocupar_com_o_coronavirus
+  examples: |
+    - devo me preocupar?
+    - coronavirus é coisa séria?
+    - corona é grave?
+    - é uma doenca que mata?
+    - covid mata as pessoas?
+
+
+
+- intent: A_infeccao_pelo_coronavirus_pode_provocar_sintomas_graves
+  examples: |
+    - sintomas graves
+    - covid pode causar sintomas graves?
+    - coronavirus e os sintomas graves
+    - sitomas graves com a doenca covid
+
+
+- intent: Quais_sao_as_pessoas_com_maior_risco_para_evoluir_com_formas_graves_da_doenca
+  examples: |
+    - pessoas com risco
+    - pessoas do grupo de risco
+    - pessoas que a doenca pode evoluir
+    - pessoas que a doenca pode matar rapido
+    - evoluir com formas graves da doenca
+    - risco de evoluir
+
+
+- intent: Quais_sao_as_pessoas_que_compoem_os_grupos_de_risco_ou_vulneravel
+  examples: |
+    - quais as pessoas do grupo de risco
+    - pessoas que mais estao em perigo
+    - pessoas com mais riscos
+    - pessoas que podem acabar morrendo
+    - pessoas que podem acabar precisando de atendimento medico
+    - pessoas vuneravel
+    - gente do grupo de riscos
+    - grupo de riscos
+
+
+- intent: As_pessoas_que_se_recuperam_da_COVID-19_podem_ser_infectadas_novamente
+  examples: |
+    - podem ser infectadas novamente?
+    - podemos pegar covid de novo?
+    - pegar covid 2 vezes
+    - pegar covid mais de uma vez
+    - posso ter covid novamente?
+    - posso ter covid denovo?
+
+
+- intent: Qual_e_o_risco_para_as_mulheres_gravidas_de_contrair_a_COVID-19
+  examples: |
+    - mulheres gravidas com covid
+    - mulheres gravidas pegar covid
+    - gravidas e covid
+    - gravidas e coronavirus
+    - quais saos os riscos de uma mulher gravida com o coronavirus
+    - mulheres gravidas e covid
+
+
+- intent: A_COVID-19_pode_causar_problemas_durante_a_gravidez
+  examples: |
+    - o covid 19 pode dar problemas na gravidez?
+    - virus ao longo da gravidez
+    - coronavirus em pessoas gestantes
+    - coronavirus mulheres gravidas
+    - corona com pessoas gravidas
+    - gravidez e coronavirus
+    - eu quero saber sobre a gestacao e o covid 19
+
+
+- intent: Uma_mulher_lactante_que_tenha_sido_infectada_pelo_coronavirus_pode_continuar_amamentando
+  examples: |
+    - amamentacao 
+    - lactante infectadas
+    - uma pessoa que esta amamentando
+    - amamentacao e o covid 19
+
+
+- intent: O_que_e_etiqueta_respiratoria
+  examples: |
+    - etiqueta respiratoria
+    - o que é etiqueta respiratoria
+    - etiqueta
+
+
+- intent: Se_estiver_doente,_o_que_fazer_para_nao_passar_a_doenca
+  examples: |
+    - o que fazer para nao passar a doenca
+    - o que fazer para nao transmitir
+    - como evitar de passar o virus para outros pessoas
+    - como nao passar o virus
+    - como nao transmitir o virus
+    - como nao espalhar 
+
+
+- intent: O_que_posso_fazer_para_evitar_a_propagacao_da_COVID-19_no_meu_local_de_trabalho
+  examples: |
+    - propagacao do covid-19 no meu local de trabalho
+    - propagacao do coronavirus em local de trabalho
+    - local de trabalho e o covid
+    - local de trabalho
+
+
+- intent: O_que_fazer_em_casos_de_viagens_essenciais_inadiaveis
+  examples: |
+    - o que posso fazer em caso de viagens
+    - o que fazer em viagens
+    - viagens essenciais
+    - preciso viajar
+    - tenho que viajar 
+    - o que fazer caso eu tenha que fazer uma voou
+    - aviao
+    - passagens aereas
+
+
+- intent: O_que_devo_fazer_ao_retornar_de_viagem
+  examples: |
+    - o que fazer quando retornar de uma viagem
+    - cuidados quando retornar de uma viagem
+    - preocacoes que devo ter ao retornar de uma viagem
+
+
+- intent: Como_o_coronavirus_e_transmitido
+  examples: |
+    - como é feito a transmissao
+    - como covid é transmitido
+    - como é feito a transmissao do covid
+    - como é propagado a doenca
+    - como é passado o virus para outras pessoas
+    - passar o virus
+    - expalahar o virus 
+
+
+- intent: Qual_o_tratamento_para_as_pessoas_com_COVID-19
+  examples: |
+    - quais saos os tratamentos existentes?
+    - quais tratamentos existem?
+    - como sao feitos os tratamentos?
+    - como é tratamentos
+    - como é feito a recuperacao das pessoas
+    - pessoas se recuperando do covid
+    - recuperacao do covid 19
+    - recuperacao do coronavirus
+
+
+- intent: O_que_se_pode_fazer_para_controlar_os_sintomas
+  examples: |
+    - como controlar os ssintomas
+    - como posso estar tomando cuidado dos sintomas
+    - controlar os sintomas
+    - vigiar os sintomas
+    - cuidados com os sintomas
+    - como controlar todos os sintomas
+    - como fazer para tomar cuidado com os sintomas
+    - como nao deixar os sintomas evoluir
+    - como evitar que os sintomas fiquem graves
+
+
+- intent: A_vacina_para_influenza_pode_proteger_tambem_contra_o_novo_coronavirus
+  examples: |
+    - vacina contra influenza
+    - vacina influenza
+    - vacina usada na influenza 
+    - influenza
+    - influensa
+
+
+- intent: O_que_e_periodo_de_incubacao
+  examples: |
+    - periodo de incubacao
+    - me fala sobre o periodo de incubacao
+    - o que é periodo de incubacao
+    - periodo que o virus fica no corpo da pessoas
+    - o que é esse periodo de incubacao
+
+
+- intent: Qual_o_periodo_de_incubacao_do_coronavirus
+  examples: |
+    - tempo de incubacao
+    - tempo que o virus fica no corpo da pessoa
+    - tempo do periodo de incubacao
+
+
+- intent: Quem_deve_usar_mascaras_cirurgicas
+  examples: |
+    - quem deve usar mascaras cirurgicas
+    - quem precisa usar mascaras
+    - mascaras, preciso usar
+    - tenho que usar mascaras?
+    - mascaras sao importantes?
+
+
+- intent: Como_usar_as_mascaras_cirurgicas
+  examples: |
+    - como usar mascaras
+    - qual a melhor forma de usar mascaras cirurgicas?
+    - melhor maneira da utilizacao das mascaras
+    - forma correta de utilizar mascaras cirurgicas
+    - melhor forma de utilizar amscara cirurgicas
+
+
+- intent: Quando_devo_substituir_a_mascara_cirurgica_por_outra_nova
+  examples: |
+    - quando usar outra mascaras
+    - quando devo trocar minha mascara
+    - quando devo substituir minha mascara?
+    - quando tenho que mudar de mascara?
+    - quando devo comprar uma mascara nova
+    - trocar mascara
+    - mascara nova
+
+
+- intent: Como_remover_a_mascara_cirurgica
+  examples: |
+    - como remover a mascara 
+    - como devo tirar a mascara do meu rosto
+    - como devo manusear a mascara
+    - melhor forma de remover a mascara
+    - remocao da mascara
+    - como tirar minha mascara
+
+
+- intent: Como_descartar_a_mascara
+  examples: |
+    - descartar mascara
+    - jogar a mascara fora
+    - jogar a mascara no lixo
+    - quero tirar minha mascara
+    - jogar fora
+    - descartar a mascara
+
+
+- intent: E_indicado_usar_luvas_descartaveis_em_locais_publicos_para_a_prevencao_do_coronavirus
+  examples: |
+    - usar luvas
+    - devo utilizar luvas?
+    - luvas sao importantes?
+    - preciso usar luvas?
+    - luvas
+    - luva
+
+
+- intent: Existe_uma_vacina_ou_medicamento_contra_COVID-19
+  examples: |
+    - existe vacina contra covid
+    - vacina covid
+    - vacina contro o covid 19
+    - vacina contro coronavirus
+    - medicamtno
+    - medicamentos contra o covid 19
+    - remedio contra corona
+    - existe alguma coisa contra o virus
+    - vacina para sars
+    - tem vacina para isso?
+    - vacina contra 
+    - vacina para matar o virus
+
+
+- intent: Os_antibioticos_sao_eficazes_na_prevencao_e_ou_tratamento_do_COVID-19
+  examples: |
+    - antibioticos sao eficazes
+    - antibioticos e o virus
+    - antibioticos e o tratamentos
+    - tratamento do virus coronavirus
+    - antibioticos sao bons
+    - antibioticos eficazes na prevencao
+    - antibioticos
+
+
+- intent: Existem_medicamentos_para_a_prevencao_de_COVID-19
+  examples: |
+    - medicamentos contra virus
+    - remedio contro o coronavirus
+    - remedio para o tratamentos
+    - medicamentos de prevencao
+    - remedio e prevencao
+    - remedio, covid 19
+
+- intent: Tem_alguma_temperatura_que_o_virus_nao_resista
+  examples: |
+    - temperatura para matar covid
+    - temperatura que o virus nao resista
+    - temperatura que mata covid
+    - temperatura que mata corona
+    - quantos graus o virus nao sobrevive?
+
+- intent: Ferver_agua_mata_o_virus
+  examples: |
+    - agua quente mata o virus?
+    - agua no fogo mata o corona
+    - agua mata o coronavirus?
+    - agua quente contra o coronavirus
+
+- intent: Agua_e_sabao_mata_o_virus
+  examples: |
+    - agua e sabao sao bons contra o corona?
+    - agua é eficaz?
+    - agua com sabao funciona contra o corona virus?
+
+- intent: Existe_uma_receita_de_gel_pra_fazer_em_casa
+  examples: |
+    - receita de gel para fazer em casa
+    - alcool em gel caseiro
+    - receita caseira
+
+- intent: EPosso_pegar_o_COVID-19_do_meu_animal_de_estimacao
+  examples: |
+    - pegar  covid do animal de estimacao
+    - pegar covid dos animais
+    - pegar corona dos animais domesticos
+    - pegar covid do meu gato
+    - pegar covid do meu cachorro
+
+- intent: E_seguro_receber_um_pacote_de_qualquer_area_em_que_o_COVID-19_tenha_sido_relatado
+  examples: |
+    - é seguro receber encomendas
+    - seguro encomendas de areas afetadas pelo covid 19
+    - areas afetadas pelo virus, fazer compras
+
+- intent: Quanto_tempo_o_virus_sobrevive_em_superficies
+  examples: |
+    - quanto tempo o virus sobrevive na superficie?
+    - quanto tempo ele fica em lugares de superficie?
+    - quanto tempo ele dura em cima de algum movel?
+
+- intent: Existe_algum_cuidado_especial_com_as_roupas
+  examples: |
+    - cuidados especiais para as roupas
+    - cuidados especiais com vestimentas
+    - o que preciso fazer com as roupas
+    - cuidado especiais com casacos, camisas, shorts
+
+- intent: Devemos_adiar_reunioes,_festas_de_aniversario,_casamentos,_cultos_religiosos
+  examples: |
+    - adiar festas
+    - adiar casamentos
+    - adiar aniversarios
+    - deixar para depois
+    - deixar para outra hora as festas
+
+- intent: Ha_um_caso_de_coronavirus_confirmado_na_minha_casa._Como_fazer_o_isolamento_domiciliar
+  examples: |
+    - como fazer o isolamento domiciliar
+    - o que devo fazer em caso de coronavirus confirmado em minha casa
+    - fazer o isolamento familiar em casa
+
+- intent: Ha_um_caso_de_coronavirus_confirmado_na_minha_casa._Quais_os_itens_precisam_ser_separados
+  examples: |
+    - item que precisam ser separados
+    - item que precisam ser separados em caso de coronavirus confirmados
+
+- intent: Ha_um_caso_de_coronavirus_confirmado_na_minha_casa._Quais_as_condutas_para_a_pessoa_com_COVID-19
+  examples: |
+    - condutas para a pessoa com covid
+    - cuidados que devo tomar caso de coronavirus confirmado em casa
+    - caso confirmado em casa
+
+
+- intent: Os_elevadores_devem_ser_usados_ao_mesmo_tempo_para_mais_de_uma_pessoa_ou_familia
+  examples: |
+    - elevadores do predio usando ao mesmo tempo
+    - elevadores do predio
+    - elavadores
+
+- intent: Consumir_alho_ajuda_na_prevencao_do_coronavirus
+  examples: |
+    - consumir alho
+    - comer alho ajuda em alguma coisa?
+    - alho ajuda na protecao do virus?
+    - alho ajuda no combate
+
+- intent: Tomar_vitamina_C,_D_e_ou_propolis_ajuda_a_prevenir_contra_o_virus
+  examples: |
+    - tomar Tomar_vitamina_C ajuda?
+    - vitmina C, D ajudam?
+    - vitaminas ajuda a prevenir
+    - vitaminas ajuda no combate do virus?
+
+- intent: Cha_de_abacate_com_hortela_mel_uisque_ou_outras_substancias_previnem_a_infeccao_pelo_coronavirus
+  examples: |
+    - cha de abacate com hortela
+    - mel e uisque
+    - substancias que previnem infeccao pelo corona
+    - mel, chá 
+    - whisque
+    - cerveja
+    - caipirinha
+
+- intent: Existe_algum_medicamento_que_nao_deva_ser_usado_em_casos_suspeitos_ou_confirmados_de_COVID-19
+  examples: |
+    - existe algum medicamento que nao deva ser usado?
+    - medicamentos que nao pode ser utilizados
+    - medicamento para nao ser ingeridos
+
+- intent: Por_que_se_indica_o_alcool_gel_na_concentracao_de_70_para_higienizacao_das_maos
+  examples: |
+    - por que devemos utilizar o alcool 70
+    - porque usar o alcool de 70 nas maos 
+    - usar o alcool fator 70 nas maos
+
+
+- intent: bad_word
+  examples: |
+    - você é um [fdp](bad_word)
+    - [babaca](bad_word)
+    - [abestado](bad_word)
+    - [anus](bad_word)
+    - [babaovo](bad_word)
+    - [baitola](bad_word)
+    - [baranga](bad_word)
+    - [besta](bad_word)
+    - [bicha](bad_word)
+    - [bixa](bad_word)
+    - [boazuda](bad_word)
+    - [boceta](bad_word)
+    - [boco](bad_word)
+    - [boiola](bad_word)
+    - [boquete](bad_word)
+    - [bosseta](bad_word)
+    - [bosta](bad_word)
+    - [brioco](bad_word)
+    - [brocha](bad_word)
+    - [broxa](bad_word)
+    - [buceta](bad_word)
+    - [bunda](bad_word)
+    - [burro](bad_word)
+    - [cachorra](bad_word)
+    - [cachorro](bad_word)
+    - [cadela](bad_word)
+    - [caga](bad_word)
+    - [cagado](bad_word)
+    - [cagao](bad_word)
+    - [cagão](bad_word)
+    - [cagona](bad_word)
+    - [canalha](bad_word)
+    - [cara de pau](bad_word)
+    - [caralho](bad_word)
+    - [carniça](bad_word)
+    - [chato](bad_word)
+    - [chata]](bad_word)
+    - [chereca](bad_word)
+    - [chifruda](bad_word)
+    - [chifrudo](bad_word)
+    - [chochota](bad_word)
+    - [corna](bad_word)
+    - [corno](bad_word)
+    - [cuzao](bad_word)
+    - [demonio](bad_word)
+    - [desgracado](bad_word)
+    - [doida](bad_word)
+    - [doido](bad_word)
+    - [droga](bad_word)
+    - [escrota](bad_word)
+    - [escroto](bad_word)
+    - [esporro](bad_word)
+    - [estupida](bad_word)
+    - [estupido](bad_word)
+    - [fdp](bad_word)
+    - [fedida](bad_word)
+    - [fedido](bad_word)
+    - [feia](bad_word)
+    - [feio](bad_word)
+    - [filho da puta](bad_word)
+    - [fiofo](bad_word)
+    - [foda](bad_word)
+    - [fode](bad_word)
+    - [fodida](bad_word)
+    - [fodido](bad_word)
+    - [fudendo](bad_word)
+    - [fudida](bad_word)
+    - [gay](bad_word)
+    - [golpista](bad_word)
+    - [gonorrea](bad_word)
+    - [gonorreia](bad_word)
+    - [idiota](bad_word)
+    - [imbecil](bad_word)
+    - [iscrota](bad_word)
+    - [iscroto](bad_word)
+    - [kenga](bad_word)
+    - [ladra](bad_word)
+    - [malandro](bad_word)
+    - [merda](bad_word)
+    - [otaria](bad_word)
+    - [otario](bad_word)
+    - [pau](bad_word)
+    - [peido](bad_word)
+    - [penis](bad_word)
+    - [picareta](bad_word)
+    - [pilantra](bad_word)
+    - [piranha](bad_word)
+    - [piroca](bad_word)
+    - [porra](bad_word)
+    - [pqp](bad_word)
+    - [punheta](bad_word)
+    - [puta](bad_word)
+    - [puto](bad_word)
+    - [ridicula](bad_word)
+    - [ridiculo](bad_word)
+    - [rola](bad_word)
+    - [safada](bad_word)
+    - [safado](bad_word)
+    - [sapatao](bad_word)
+    - [tezao](bad_word)
+    - [tomar no cu](bad_word)
+    - [trouxa](bad_word)
+    - [vaca](bad_word)
+    - [vagabunda](bad_word)
+    - [vagabundo](bad_word)
+    - [vagina](bad_word)
+    - [veada](bad_word)
+    - [veado](bad_word)
+    - [verme](bad_word)
+    - [viada](bad_word)
+    - [viado](bad_word)
+    - [xoxota](bad_word)

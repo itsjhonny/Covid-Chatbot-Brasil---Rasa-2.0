@@ -1,0 +1,63 @@
+version: '3.4'
+services:
+
+  nginx:
+    container_name: "nginx"
+    image: nginx
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    networks: ['rasa-network']
+    ports:
+    
+      - 80:80
+    depends_on: 
+      - rasa
+      - action_server
+      - chatbot_ui
+      - mongo
+  rasa:
+    container_name: "rasa_server"
+    build: 
+      context: backend
+    networks: ['rasa-network']
+    ports: 
+      - "5005:5005"
+  action_server:
+    container_name: "action_server"
+    build: 
+      context: actions
+    command:
+      - start
+    networks: ['rasa-network']
+    ports:
+      - 5055:5055 
+    expose:
+      - 5055
+  chatbot_ui:
+    container_name: "chatbot_ui"
+    build: 
+      context: frontend
+    networks: ['rasa-network']
+    ports: 
+      - "3000:3000"
+
+  mongo:
+    image: mongo
+    container_name: "mongo"
+    networks: ['rasa-network']
+    ports:
+      - 27017:27017
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: rasa
+      MONGO_INITDB_ROOT_PASSWORD: example
+  mongo-express:  # this service is a MongoDB UI, and is optional
+    image: mongo-express
+    networks: ['rasa-network']
+    ports:
+      - 8081:8081
+    environment:
+      ME_CONFIG_MONGODB_ADMINUSERNAME: rasa
+      ME_CONFIG_MONGODB_ADMINPASSWORD: example
+
+networks: {rasa-network: {}}
+      
