@@ -161,7 +161,7 @@ responses:
       e várias outras coisas!  Caso queira, é só pedir por mais opções!
   utter_menu:
   - buttons:
-    - payload: /action_global_cases_covid
+    - payload: /global_cases_covid
       title: Estatísticas
     - payload: /news
       title: Ultimas Notícias

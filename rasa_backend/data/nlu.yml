@@ -94,6 +94,8 @@ nlu:
     - quero saber o numero de infectatos atualizado
     - numero atualizado
     - numero de infectados
+    - action_global_cases_covid
+    - /global_cases_covid
 
 
 

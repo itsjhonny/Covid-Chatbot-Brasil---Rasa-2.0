@@ -13,6 +13,11 @@ rules:
   - intent: bot_challenge
   - action: utter_iamabot
 
+- rule: Say 'global_cases_covid' anytime the user challenges
+  steps:
+  - intent: global_cases_covid
+  - action: action_global_cases_covid
+
 ##Fallback
 - rule: Ask the user to rephrase whenever they send a message with low NLU confidence
   steps:
