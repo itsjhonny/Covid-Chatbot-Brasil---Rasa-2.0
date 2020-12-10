@@ -1,12 +1,18 @@
 # Brazil Chatbot-Rasa 2.0+
-COVID-19 Chatbot (https://mooc.campusvirtual.fiocruz.br/rea/coronavirus/faq.html)
-2. Rodar este comando para iniciar:
+COVID-19 Chatbot utiliza perguntas e resposta do portal da Fiocruz (https://mooc.campusvirtual.fiocruz.br/rea/coronavirus/faq.html)
+
+``` MIT License | Rasa 2 | MongoDB | Python | Open Source 💙  ```
+
+1. Rodar este comando para iniciar:
 
 ```docker-compose up --build```
 
-3. Pagina web do bot:
+2. Pagina web do bot:
 
 ```http://localhost:3000```
+
+Obs: esperar a mensagem no terminal *connected to socketIO endpoint.* do rasa_server.
+
 
 
 **NOTE:** 
@@ -69,3 +75,7 @@ terminal $: docker-composer up nginx mongo mongo-express chatbot_ui -d
 dentro da pasta backend
 (env_rasa_chatbot)terminal $: rasa run actions & rasa x -m models --enable-api --log-file rasa.log  --cors "*"
 ```
+### ToDo:
+- [ ] Implementar Telegram
+- [ ] Implementar action_news_covid (Ultimas noticias de covid)
+- [x] Corrigir action_server

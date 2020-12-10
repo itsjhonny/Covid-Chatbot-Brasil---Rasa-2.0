@@ -1,0 +1,459 @@
+version: "2.0"
+
+stories:
+
+- story: inicio 1
+  steps:
+  - intent: saudacao
+  - action: utter_saudacao
+  - action: utter_menu_inicial
+
+- story: bad_word
+  steps:
+  - intent: bad_word
+  - action: utter_bad_word
+
+- story: Story from Conversation ID 47f35f3f6af44cfcbd8e64cb5754e1ba
+  steps:
+  - intent: saudacao
+  - action: utter_saudacao
+  - action: utter_menu_inicial
+  - intent: menu
+  - action: utter_menu
+
+###### Feedback ######
+- story: adeus
+  steps:
+  - intent: adeus
+  - action: utter_adeus
+  - intent: avaliacao_feliz
+  - action: utter_avaliacao_feliz
+
+- story: adeus 2
+  steps:
+  - intent: adeus
+  - action: utter_adeus
+  - intent: avaliacao_triste
+  - action: utter_avaliacao_triste
+
+###### Actions ######
+- story: global_cases_covid
+  steps:
+  - intent: global_cases_covid
+  - action: action_global_cases_covid
+
+###### Fiocruz portal  questions zone ######
+- story: O_que_e_covid-19
+  steps:
+  - intent: O_que_e_covid-19
+  - action: utter_O_que_e_covid-19
+  - action: utter_conversa
+
+- story: O_que_significa_a_palavra_coronavirus
+  steps:
+  - intent: O_que_significa_a_palavra_coronavirus
+  - action: utter_O_que_significa_a_palavra_coronavirus
+  - action: utter_conversa
+
+- story: O_que_significa_Sars-CoV-2
+  steps:
+  - intent: O_que_significa_Sars-CoV-2
+  - action: utter_O_que_significa_Sars-CoV-2
+  - action: utter_conversa
+
+  
+- story: Quando_devo_usar_SARS-CoV-2,_COVID-19_e_coronavirus
+  steps:
+  - intent: Quando_devo_usar_SARS-CoV-2,_COVID-19_e_coronavirus
+  - action: utter_Quando_devo_usar_SARS-CoV-2,_COVID-19_e_coronavirus
+  - action: utter_conversa
+
+  
+- story: Como_surgiu_o_novo_Coronavirus
+  steps:
+  - intent: Como_surgiu_o_novo_Coronavirus
+  - action: utter_Como_surgiu_o_novo_Coronavirus
+  - action: utter_conversa
+
+  
+- story: O_novo_coronavirus_e_o_mesmo_que_os_virus_Sars_ou_Mers
+  steps:
+  - intent: O_novo_coronavirus_e_o_mesmo_que_os_virus_Sars_ou_Mers
+  - action: utter_O_novo_coronavirus_e_o_mesmo_que_os_virus_Sars_ou_Mers
+  - action: utter_conversa
+
+  
+- story: Qual_e_a_diferenca_entre_transmissao_local_e_comunitaria_sustentada
+  steps:
+  - intent: Qual_e_a_diferenca_entre_transmissao_local_e_comunitaria_sustentada
+  - action: utter_Qual_e_a_diferenca_entre_transmissao_local_e_comunitaria_sustentada
+  - action: utter_conversa
+
+  
+- story: Quais_os_primeiros_sintomas_da_COVID-19
+  steps:
+  - intent: Quais_os_primeiros_sintomas_da_COVID-19
+  - action: utter_Quais_os_primeiros_sintomas_da_COVID-19
+  - action: utter_conversa
+
+  
+- story: Como_diferenciar_gripe_comum_do_coronavirus
+  steps:
+  - intent: Como_diferenciar_gripe_comum_do_coronavirus
+  - action: utter_Como_diferenciar_gripe_comum_do_coronavirus
+  - action: utter_conversa
+
+  
+- story: Quais_sao_os_criterios_para_aplicacao_do_teste_Pessoas_com_sintomas_leves_nao_estao_sendo_testadas
+  steps:
+  - intent: Quais_sao_os_criterios_para_aplicacao_do_teste_Pessoas_com_sintomas_leves_nao_estao_sendo_testadas
+  - action: utter_Quais_sao_os_criterios_para_aplicacao_do_teste_Pessoas_com_sintomas_leves_nao_estao_sendo_testadas
+  - action: utter_conversa
+
+  
+- story: Como_posso_fazer_o_teste_de_diagnostico_na_Fiocruz
+  steps:
+  - intent: Como_posso_fazer_o_teste_de_diagnostico_na_Fiocruz
+  - action: utter_Como_posso_fazer_o_teste_de_diagnostico_na_Fiocruz
+  - action: utter_conversa
+
+  
+- story: A_COVID-19_pode_apresentar_outros_sintomas
+  steps:
+  - intent: A_COVID-19_pode_apresentar_outros_sintomas
+  - action: utter_A_COVID-19_pode_apresentar_outros_sintomas
+  - action: utter_conversa
+
+  
+- story: Pessoas_com_sintomas_leves_podem_transmitir_a_COVID-19
+  steps:
+  - intent: Pessoas_com_sintomas_leves_podem_transmitir_a_COVID-19
+  - action: utter_Pessoas_com_sintomas_leves_podem_transmitir_a_COVID-19
+  - action: utter_conversa
+
+  
+- story: A_pessoa_pode_transmitir_o_coronavirus_mesmo_sem_apresentar_sintoma
+  steps:
+  - intent: A_pessoa_pode_transmitir_o_coronavirus_mesmo_sem_apresentar_sintoma
+  - action: utter_A_pessoa_pode_transmitir_o_coronavirus_mesmo_sem_apresentar_sintoma
+  - action: utter_conversa
+
+  
+- story: Quando_a_pessoa_deve_procurar_atendimento_de_saude
+  steps:
+  - intent: Quando_a_pessoa_deve_procurar_atendimento_de_saude
+  - action: utter_Quando_a_pessoa_deve_procurar_atendimento_de_saude
+  - action: utter_conversa
+
+  
+- story: Devo_me_preocupar_com_o_coronavirus
+  steps:
+  - intent: Devo_me_preocupar_com_o_coronavirus
+  - action: utter_Devo_me_preocupar_com_o_coronavirus
+  - action: utter_conversa
+
+  
+- story: A_infeccao_pelo_coronavirus_pode_provocar_sintomas_graves
+  steps:
+  - intent: A_infeccao_pelo_coronavirus_pode_provocar_sintomas_graves
+  - action: utter_A_infeccao_pelo_coronavirus_pode_provocar_sintomas_graves
+  - action: utter_conversa
+
+  
+- story: Quais_sao_as_pessoas_com_maior_risco_para_evoluir_com_formas_graves_da_doenca
+  steps:
+  - intent: Quais_sao_as_pessoas_com_maior_risco_para_evoluir_com_formas_graves_da_doenca
+  - action: utter_Quais_sao_as_pessoas_com_maior_risco_para_evoluir_com_formas_graves_da_doenca
+  - action: utter_conversa
+
+  
+- story: Quais_sao_as_pessoas_que_compoem_os_grupos_de_risco_ou_vulneravel
+  steps:
+  - intent: Quais_sao_as_pessoas_que_compoem_os_grupos_de_risco_ou_vulneravel
+  - action: utter_Quais_sao_as_pessoas_que_compoem_os_grupos_de_risco_ou_vulneravel
+  - action: utter_conversa
+
+  
+- story: As_pessoas_que_se_recuperam_da_COVID-19_podem_ser_infectadas_novamente
+  steps:
+  - intent: As_pessoas_que_se_recuperam_da_COVID-19_podem_ser_infectadas_novamente
+  - action: utter_As_pessoas_que_se_recuperam_da_COVID-19_podem_ser_infectadas_novamente
+  - action: utter_conversa
+
+  
+- story: Qual_e_o_risco_para_as_mulheres_gravidas_de_contrair_a_COVID-19
+  steps:
+  - intent: Qual_e_o_risco_para_as_mulheres_gravidas_de_contrair_a_COVID-19
+  - action: utter_Qual_e_o_risco_para_as_mulheres_gravidas_de_contrair_a_COVID-19
+  - action: utter_conversa
+
+  
+- story: A_COVID-19_pode_causar_problemas_durante_a_gravidez
+  steps:
+  - intent: A_COVID-19_pode_causar_problemas_durante_a_gravidez
+  - action: utter_A_COVID-19_pode_causar_problemas_durante_a_gravidez
+  - action: utter_conversa
+
+  
+- story: Uma_mulher_lactante_que_tenha_sido_infectada_pelo_coronavirus_pode_continuar_amamentando
+  steps:
+  - intent: Uma_mulher_lactante_que_tenha_sido_infectada_pelo_coronavirus_pode_continuar_amamentando
+  - action: utter_Uma_mulher_lactante_que_tenha_sido_infectada_pelo_coronavirus_pode_continuar_amamentando
+  - action: utter_conversa
+
+  
+- story: O_que_e_etiqueta_respiratoria
+  steps:
+  - intent: O_que_e_etiqueta_respiratoria
+  - action: utter_O_que_e_etiqueta_respiratoria
+  - action: utter_conversa
+
+  
+- story: Se_estiver_doente,_o_que_fazer_para_nao_passar_a_doenca
+  steps:
+  - intent: Se_estiver_doente,_o_que_fazer_para_nao_passar_a_doenca
+  - action: utter_Se_estiver_doente,_o_que_fazer_para_nao_passar_a_doenca
+  - action: utter_conversa
+
+  
+- story: O_que_posso_fazer_para_evitar_a_propagacao_da_COVID-19_no_meu_local_de_trabalho
+  steps:
+  - intent: O_que_posso_fazer_para_evitar_a_propagacao_da_COVID-19_no_meu_local_de_trabalho
+  - action: utter_O_que_posso_fazer_para_evitar_a_propagacao_da_COVID-19_no_meu_local_de_trabalho
+  - action: utter_conversa
+
+  
+- story: O_que_fazer_em_casos_de_viagens_essenciais_inadiaveis
+  steps:
+  - intent: O_que_fazer_em_casos_de_viagens_essenciais_inadiaveis
+  - action: utter_O_que_fazer_em_casos_de_viagens_essenciais_inadiaveis
+  - action: utter_conversa
+
+  
+- story: O_que_devo_fazer_ao_retornar_de_viagem
+  steps:
+  - intent: O_que_devo_fazer_ao_retornar_de_viagem
+  - action: utter_O_que_devo_fazer_ao_retornar_de_viagem
+  - action: utter_conversa
+
+  
+- story: Como_o_coronavirus_e_transmitido
+  steps:
+  - intent: Como_o_coronavirus_e_transmitido
+  - action: utter_Como_o_coronavirus_e_transmitido
+  - action: utter_conversa
+
+  
+- story: Qual_o_tratamento_para_as_pessoas_com_COVID-19
+  steps:
+  - intent: Qual_o_tratamento_para_as_pessoas_com_COVID-19
+  - action: utter_Qual_o_tratamento_para_as_pessoas_com_COVID-19
+  - action: utter_conversa
+
+  
+- story: O_que_se_pode_fazer_para_controlar_os_sintomas
+  steps:
+  - intent: O_que_se_pode_fazer_para_controlar_os_sintomas
+  - action: utter_O_que_se_pode_fazer_para_controlar_os_sintomas
+  - action: utter_conversa
+
+  
+- story: A_vacina_para_influenza_pode_proteger_tambem_contra_o_novo_coronavirus
+  steps:
+  - intent: A_vacina_para_influenza_pode_proteger_tambem_contra_o_novo_coronavirus
+  - action: utter_A_vacina_para_influenza_pode_proteger_tambem_contra_o_novo_coronavirus
+  - action: utter_conversa
+
+  
+- story: O_que_e_periodo_de_incubacao
+  steps:
+  - intent: O_que_e_periodo_de_incubacao
+  - action: utter_O_que_e_periodo_de_incubacao
+  - action: utter_conversa
+
+  
+- story: Qual_o_periodo_de_incubacao_do_coronavirus
+  steps:
+  - intent: Qual_o_periodo_de_incubacao_do_coronavirus
+  - action: utter_Qual_o_periodo_de_incubacao_do_coronavirus
+  - action: utter_conversa
+
+  
+- story: Quem_deve_usar_mascaras_cirurgicas
+  steps:
+  - intent: Quem_deve_usar_mascaras_cirurgicas
+  - action: utter_Quem_deve_usar_mascaras_cirurgicas
+  - action: utter_conversa
+
+  
+- story: Como_usar_as_mascaras_cirurgicas
+  steps:
+  - intent: Como_usar_as_mascaras_cirurgicas
+  - action: utter_Como_usar_as_mascaras_cirurgicas
+  - action: utter_conversa
+
+  
+- story: Quando_devo_substituir_a_mascara_cirurgica_por_outra_nova
+  steps:
+  - intent: Quando_devo_substituir_a_mascara_cirurgica_por_outra_nova
+  - action: utter_Quando_devo_substituir_a_mascara_cirurgica_por_outra_nova
+  - action: utter_conversa
+
+  
+- story: Como_remover_a_mascara_cirurgica
+  steps:
+  - intent: Como_remover_a_mascara_cirurgica
+  - action: utter_Como_remover_a_mascara_cirurgica
+  - action: utter_conversa
+
+  
+- story: Como_descartar_a_mascara
+  steps:
+  - intent: Como_descartar_a_mascara
+  - action: utter_Como_descartar_a_mascara
+  - action: utter_conversa
+
+  
+- story: E_indicado_usar_luvas_descartaveis_em_locais_publicos_para_a_prevencao_do_coronavirus
+  steps:
+  - intent: E_indicado_usar_luvas_descartaveis_em_locais_publicos_para_a_prevencao_do_coronavirus
+  - action: utter_E_indicado_usar_luvas_descartaveis_em_locais_publicos_para_a_prevencao_do_coronavirus
+  - action: utter_conversa
+
+  
+- story: Existe_uma_vacina_ou_medicamento_contra_COVID-19
+  steps:
+  - intent: Existe_uma_vacina_ou_medicamento_contra_COVID-19
+  - action: utter_Existe_uma_vacina_ou_medicamento_contra_COVID-19
+  - action: utter_conversa
+
+  
+- story: Os_antibioticos_sao_eficazes_na_prevencao_e_ou_tratamento_do_COVID-19
+  steps:
+  - intent: Os_antibioticos_sao_eficazes_na_prevencao_e_ou_tratamento_do_COVID-19
+  - action: utter_Os_antibioticos_sao_eficazes_na_prevencao_e_ou_tratamento_do_COVID-19
+  - action: utter_conversa
+
+  
+- story: Existem_medicamentos_para_a_prevencao_de_COVID-19
+  steps:
+  - intent: Existem_medicamentos_para_a_prevencao_de_COVID-19
+  - action: utter_Existem_medicamentos_para_a_prevencao_de_COVID-19
+  - action: utter_conversa
+
+- story: Tem_alguma_temperatura_que_o_virus_nao_resista
+  steps:
+  - intent: Tem_alguma_temperatura_que_o_virus_nao_resista
+  - action: utter_Tem_alguma_temperatura_que_o_virus_nao_resista
+  - action: utter_conversa
+
+- story: Ferver_agua_mata_o_virus
+  steps:
+  - intent: Ferver_agua_mata_o_virus
+  - action: utter_Ferver_agua_mata_o_virus
+  - action: utter_conversa
+
+- story: Agua_e_sabao_mata_o_virus
+  steps:
+  - intent: Agua_e_sabao_mata_o_virus
+  - action: utter_Agua_e_sabao_mata_o_virus
+  - action: utter_conversa
+
+- story: Existe_uma_receita_de_gel_pra_fazer_em_casa
+  steps:
+  - intent: Existe_uma_receita_de_gel_pra_fazer_em_casa
+  - action: utter_Existe_uma_receita_de_gel_pra_fazer_em_casa
+  - action: utter_conversa
+
+- story: EPosso_pegar_o_COVID-19_do_meu_animal_de_estimacao
+  steps:
+  - intent: EPosso_pegar_o_COVID-19_do_meu_animal_de_estimacao
+  - action: utter_EPosso_pegar_o_COVID-19_do_meu_animal_de_estimacao
+  - action: utter_conversa
+
+- story: E_seguro_receber_um_pacote_de_qualquer_area_em_que_o_COVID-19_tenha_sido_relatado
+  steps:
+  - intent: E_seguro_receber_um_pacote_de_qualquer_area_em_que_o_COVID-19_tenha_sido_relatado
+  - action: utter_E_seguro_receber_um_pacote_de_qualquer_area_em_que_o_COVID-19_tenha_sido_relatado
+  - action: utter_conversa
+
+- story: Quanto_tempo_o_virus_sobrevive_em_superficies
+  steps:
+  - intent: Quanto_tempo_o_virus_sobrevive_em_superficies
+  - action: utter_Quanto_tempo_o_virus_sobrevive_em_superficies
+  - action: utter_conversa
+
+- story: Existe_algum_cuidado_especial_com_as_roupas
+  steps:
+  - intent: Existe_algum_cuidado_especial_com_as_roupas
+  - action: utter_Existe_algum_cuidado_especial_com_as_roupas
+  - action: utter_conversa
+
+- story: Devemos_adiar_reunioes,_festas_de_aniversario,_casamentos,_cultos_religiosos
+  steps:
+  - intent: Devemos_adiar_reunioes,_festas_de_aniversario,_casamentos,_cultos_religiosos
+  - action: utter_Devemos_adiar_reunioes,_festas_de_aniversario,_casamentos,_cultos_religiosos
+  - action: utter_conversa
+
+- story: Ha_um_caso_de_coronavirus_confirmado_na_minha_casa._Como_fazer_o_isolamento_domiciliar
+  steps:
+  - intent: Ha_um_caso_de_coronavirus_confirmado_na_minha_casa._Como_fazer_o_isolamento_domiciliar
+  - action: utter_Ha_um_caso_de_coronavirus_confirmado_na_minha_casa._Como_fazer_o_isolamento_domiciliar
+  - action: utter_conversa
+
+- story: Ha_um_caso_de_coronavirus_confirmado_na_minha_casa._Quais_os_itens_precisam_ser_separados
+  steps:
+  - intent: Ha_um_caso_de_coronavirus_confirmado_na_minha_casa._Quais_os_itens_precisam_ser_separados
+  - action: utter_Ha_um_caso_de_coronavirus_confirmado_na_minha_casa._Quais_os_itens_precisam_ser_separados
+  - action: utter_conversa
+
+- story: Ha_um_caso_de_coronavirus_confirmado_na_minha_casa._Quais_as_condutas_para_a_pessoa_com_COVID-19
+  steps:
+  - intent: Ha_um_caso_de_coronavirus_confirmado_na_minha_casa._Quais_as_condutas_para_a_pessoa_com_COVID-19
+  - action: utter_Ha_um_caso_de_coronavirus_confirmado_na_minha_casa._Quais_as_condutas_para_a_pessoa_com_COVID-19
+  - action: utter_conversa
+
+- story: Ha_um_caso_de_coronavirus_confirmado_na_minha_casa._Quais_as_condutas_para_todos_os_outros_moradores
+  steps:
+  - intent: Ha_um_caso_de_coronavirus_confirmado_na_minha_casa._Quais_as_condutas_para_todos_os_outros_moradores
+  - action: utter_Ha_um_caso_de_coronavirus_confirmado_na_minha_casa._Quais_as_condutas_para_todos_os_outros_moradores
+  - action: utter_conversa
+
+- story: Os_elevadores_devem_ser_usados_ao_mesmo_tempo_para_mais_de_uma_pessoa_ou_familia
+  steps:
+  - intent: Os_elevadores_devem_ser_usados_ao_mesmo_tempo_para_mais_de_uma_pessoa_ou_familia
+  - action: utter_Os_elevadores_devem_ser_usados_ao_mesmo_tempo_para_mais_de_uma_pessoa_ou_familia
+  - action: utter_conversa
+
+- story: Consumir_alho_ajuda_na_prevencao_do_coronavirus
+  steps:
+  - intent: Consumir_alho_ajuda_na_prevencao_do_coronavirus
+  - action: utter_Consumir_alho_ajuda_na_prevencao_do_coronavirus
+  - action: utter_conversa
+
+- story: Tomar_vitamina_C,_D_e_ou_propolis_ajuda_a_prevenir_contra_o_virus
+  steps:
+  - intent: Tomar_vitamina_C,_D_e_ou_propolis_ajuda_a_prevenir_contra_o_virus
+  - action: utter_Tomar_vitamina_C,_D_e_ou_propolis_ajuda_a_prevenir_contra_o_virus
+  - action: utter_conversa
+
+- story: Cha_de_abacate_com_hortela_mel_uisque_ou_outras_substancias_previnem_a_infeccao_pelo_coronavirus
+  steps:
+  - intent: Cha_de_abacate_com_hortela_mel_uisque_ou_outras_substancias_previnem_a_infeccao_pelo_coronavirus
+  - action: utter_Cha_de_abacate_com_hortela_mel_uisque_ou_outras_substancias_previnem_a_infeccao_pelo_coronavirus
+  - action: utter_conversa
+
+- story: Existe_algum_medicamento_que_nao_deva_ser_usado_em_casos_suspeitos_ou_confirmados_de_COVID-19
+  steps:
+  - intent: Existe_algum_medicamento_que_nao_deva_ser_usado_em_casos_suspeitos_ou_confirmados_de_COVID-19
+  - action: utter_Existe_algum_medicamento_que_nao_deva_ser_usado_em_casos_suspeitos_ou_confirmados_de_COVID-19
+  - action: utter_conversa
+
+- story: Por_que_se_indica_o_alcool_gel_na_concentracao_de_70_para_higienizacao_das_maos
+  steps:
+  - intent: Por_que_se_indica_o_alcool_gel_na_concentracao_de_70_para_higienizacao_das_maos
+  - action: utter_Por_que_se_indica_o_alcool_gel_na_concentracao_de_70_para_higienizacao_das_maos
+  - action: utter_conversa
+
+
+  
