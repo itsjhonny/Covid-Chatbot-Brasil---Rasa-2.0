@@ -45,9 +45,9 @@ actions:
 action_global_cases_covid
 acionada pela intent: global_cases_covid
 funcao:
-fazer uma chamada do tipo "GET" na API "https://api.covid19api.com/summary" e retornar ao usuario as ultimas informacoes de 
+fazer uma chamada do tipo "GET" na API "https://api.covid19api.com/summary" 
+e retornar ao usuario as ultimas informacoes de 
 Confirmados, Recuperados e Óbitos
-
 ```
 
 ## Virtual Env
