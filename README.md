@@ -48,10 +48,6 @@ funcao:
 fazer uma chamada do tipo "GET" na API "https://api.covid19api.com/summary" e retornar ao usuario as ultimas informacoes de 
 Confirmados, Recuperados e Óbitos
 
-
-
-
-
 ```
 
 ## Virtual Env
