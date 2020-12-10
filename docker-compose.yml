@@ -54,6 +54,8 @@ services:
       - 80:80
     depends_on:
       - chatbot_ui
+      - rasa
+      - mongo-express
       - mongo
   
 
