@@ -61,14 +61,6 @@ virtualenv env_rasa_chatbot
 source env_rasa_chatbot/bin/activate
 pip3 install -r requirements.txt --no-index
 
-para usar actions com virtualenv
-alterar no arquivo endpoints.yml:
-action_endpoint:
- url: http://action_server:5055/webhook
- 
-para:
-action_endpoint:
- url: http://localhost:5055/webhook
  
 terminal $: docker-composer up nginx mongo mongo-express chatbot_ui -d 
 
